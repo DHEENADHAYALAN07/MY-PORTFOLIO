@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about11.css">
+</head>
+<body>
+
+  
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo" onclick="scrollToSection('home')">DHEENADHAYALAN S</div>
+      <!-- Hamburger (visible on mobile only) -->
+       <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <!-- Normal navigation (visible on desktop only) -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about11.html">About</a>
+        <a href="skill1.html">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+   </div>
+ </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="text-center section-header">
+        <h2>About Me</h2>
+        <p>Get to know the person behind the code</p>
+      </div>
+
+      <div class="about-content full-width">
+        <div class="card">
+          <h3>My Journey</h3>
+            <p>
+              I'm an Information Technology graduate from <strong>Agni College of Technology</strong>, passionate about Java full-stack web development.
+              My journey began with curiosity about how websites work and has evolved into a deep love
+              for creating digital experiences.
+            </p>
+            <p>
+              Throughout my studies, I've developed a strong foundation in <strong>Python</strong>, <strong>Java</strong>, <strong>SQL</strong>, and frontend technologies. I'm currently deepening my backend skills with <strong>Spring Boot</strong> to strengthen my Java full-stack development capabilities. I'm always eager to learn new frameworks and best practices, and I believe in writing clean, maintainable code to create user-centered solutions.
+            </p>
+            <p>
+              To deepen my programming knowledge, I successfully completed NPTEL certifications in <strong>"The Joy of Computing using Python"</strong> and <strong>"Data Structures and Algorithms in Java"</strong>.
+            </p>
+            <p>
+              I maintain an adaptable, growth-oriented mindset and am eager to learn new technologies and tools to continuously improve my skills.
+            </p>
+
+        </div>
+
+        <br>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            8.5
+            <span>GPA</span>
+          </div>
+          <a href="project.html" class="no-underline"><div class="stat-box">
+            5+
+            <span>Projects</span>
+          </div></a>
+          <a href="intern.html" class="no-underline"> <div class="stat-box">
+            2
+            <span>Internships</span>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("show");
+  }
+  </script>
+
+</body>
+</html>

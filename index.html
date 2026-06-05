@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DHEENADHAYALAN S PORTFOLIO</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo" onclick="scrollToSection('home')">DHEENADHAYALAN S</div>
+      <!-- Hamburger (visible on mobile only) -->
+       <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <!-- Normal navigation (visible on desktop only) -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about11.html">About</a>
+        <a href="skill1.html">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+   </div>
+ </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        
+        <div class="profile-pic">
+          <img src="images/dheena photo.jpeg" 
+               alt="Full Stack Developer" />
+        </div>
+
+        <h1>Hi, I'm <span class="gradient-text">DHEENADHAYALAN S</span></h1>
+        <p class="subtitle">Information Technology Graduate, Aspiring Java Full Stack Developer</p>
+        <p class="description">
+          Passionate about creating beautiful, functional web applications using modern technologies.
+          Ready to launch my career in full stack development.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="project.html"> <button onclick="scrollToSection('project')" class="btn primary">View My Work ➜</button></a>
+          <a href="contact.html"> <button onclick="scrollToSection('contact')" class="btn outline">Get In Touch ✉️</button></a>
+        </div>
+
+        <div class="hero-socials">
+          <div class="social-links">
+            <a href="https://github.com/DHEENADHAYALAN07" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24" />
+            </a>
+            <a href="https://www.linkedin.com/in/dheena photo.jpeg2s/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24" />
+            </a>
+            <a href="https://www.instagram.com/_.dheenaa.__/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="text-center section-header">
+        <h2>About Me</h2>
+        <p>Get to know the person behind the code</p>
+      </div>
+
+      <div class="about-content full-width">
+        <div class="card">
+          <h3>My Journey</h3>
+            <p>
+              I'm an Information Technology graduate from <strong>Agni College of Technology</strong>, passionate about Java full-stack web development.
+              My journey began with curiosity about how websites work and has evolved into a deep love
+              for creating digital experiences.
+            </p>
+            <p>
+              Throughout my studies, I've developed a strong foundation in <strong>Python</strong>, <strong>Java</strong>, <strong>SQL</strong>, and frontend technologies. I'm currently deepening my backend skills with <strong>Spring Boot</strong> to strengthen my Java full-stack development capabilities. I'm always eager to learn new frameworks and best practices, and I believe in writing clean, maintainable code to create user-centered solutions.
+            </p>
+            <p>
+              To deepen my programming knowledge, I successfully completed NPTEL certifications in <strong>"The Joy of Computing using Python"</strong> and <strong>"Data Structures and Algorithms in Java"</strong>.
+            </p>
+            <p>
+              I maintain an adaptable, growth-oriented mindset and am eager to learn new technologies and tools to continuously improve my skills.
+            </p>
+
+        </div>
+
+        <br>
+
+        <div class="stats-grid">
+          <div class="stat-box">
+            8.5
+            <span>GPA</span>
+          </div>
+          <a href="project.html" class="no-underline"><div class="stat-box">
+            5+
+            <span>Projects</span>
+          </div></a>
+          <a href="intern.html" class="no-underline"> <div class="stat-box">
+            2
+            <span>Internships</span>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">A comprehensive overview of my technical expertise and proficiencies</p>
+      <!-- Frontend -->
+      <h3 class="skill-category">🎨 Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="images/html-icon.png" alt="HTML" />
+          <h4>HTML</h4>
+          <p>Semantic markup and accessible webpages.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/css-icon.png" alt="CSS" />
+          <h4>CSS</h4>
+          <p>Responsive layouts, Flexbox, Grid, and modern styling techniques.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/js-icon.webp" alt="JavaScript" />
+          <h4>JavaScript</h4>
+          <p>DOM manipulation, event handling, and client-side logic.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/react-icon.png" alt="React" />
+          <h4>React</h4>
+          <p>Component-based UI development and state management basics.</p>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <h3 class="skill-category">🛠️ Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="images/python-icon.jpeg" alt="Python" />
+          <h4>Python</h4>
+          <p>Server-side scripting and backend development.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/java-icon.svg" alt="Java" />
+          <h4>Java</h4>
+          <p>Core Java for backend application development.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/spring-boot.png" alt="Spring Boot" />
+          <h4>Spring Boot</h4>
+          <p>Java backend framework for building RESTful services.</p>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <h3 class="skill-category">🗄️ Databases</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="images/sql-icon.png" alt="SQL" />
+          <h4>SQL</h4>
+          <p>Relational database design and querying.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/mongo-db.png" alt="MongoDB" />
+          <h4>MongoDB</h4>
+          <p>Document database modeling and operations.</p>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <h3 class="skill-category">⚙️ Tools</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="images/github-icon.png" alt="Git" />
+          <h4>Git / GitHub</h4>
+          <p>Version control and collaborative workflows.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/post-man.png" alt="Postman" />
+          <h4>Postman</h4>
+          <p>API testing and request automation.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/figma-icon.webp" alt="Figma" />
+          <h4>Figma</h4>
+          <p>UI design and prototyping.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/vs code-icon.jpeg" alt="Vs Code" />
+          <h4>VS Code</h4>
+          <p>Main development environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>A selection of my recent projects showcasing diverse skills and technologies.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <div class="project-image" style="background-image: url(images/freelancer-trust.png);"></div>
+          <div class="project-content">
+            <h3>Freelancer Trust Evaluation System - Trust Loom</h3>
+            <p>Developed a trust evaluation platform using a React frontend and a Python backend (FastAPI). The system leverages AI models such as BERT and LSTM alongside rule-based heuristics to generate trust scores, risk levels, and automated flags for freelancer profiles.</p>
+            <div class="tech-tags">
+              <span>React</span><span>Python</span><span>FastAPI</span><span>BERT</span><span>LSTM</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DHEENADHAYALAN07/REACT-NATIVE-PROJECT" target="_blank">💻 Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <div class="project-image" style="background-image: url(images/banking-system.jpg);"></div>
+          <div class="project-content">
+            <h3>Banking System</h3>
+            <p>Implemented a menu-driven Banking System using Java and Spring Boot with Spring JDBC for database access. Core features include account creation, deposits, withdrawals, and transaction history persisted in MySQL.</p>
+            <div class="tech-tags">
+              <span>Java</span><span>Spring Boot</span><span>Spring JDBC</span><span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DHEENADHAYALAN07/BANKING-SYSTEM" target="_blank">💻 Code</a>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="project-card">
+          <div class="project-image" style="background-image: url(images/customer-project.jpg);"></div>
+          <div class="project-content">
+            <h3>CRM - CUSTOMER RELATIONSHIP MANAGEMENT</h3>
+            <p>The Customer Relationship Management (CRM) system is designed to store, manage, and track
+            customer data. Developed a user-friendly desktop application using Tkinter to manage customer information (add, update, view, delete).</p>
+
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Tkinter</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/DHEENADHAYALAN07/CRM-CUSTOMER-RELATIONSHIP-MANAGEMENT/blob/main/CRM.py" target="_blank">💻 Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more projects below in the same format -->
+
+      </div>
+
+      <div class="view-more">
+        <button onclick="window.open('https://github.com/DHEENADHAYALAN07?tab=repositories', '_blank')">View All Projects on GitHub 🐙</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>I'm always open to discussing new opportunities and interesting projects. Let's create something amazing together!</p>
+      </div>
+
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send me a message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <input type="text" name="firstName" placeholder="First Name" required />
+              <input type="text" name="lastName" placeholder="Last Name" required />
+            </div>
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="5" placeholder="something ..." required></textarea>
+            <button type="submit">Send Message ✉️</button>
+          </form>
+          <div id="formMessage" class="form-message"></div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <br>
+          <ul>
+            <li><strong>Email:</strong> dheenad901@gmail.com</li>
+            <li><strong>Phone:</strong> +91 76039 81355</li>
+            <li><strong>Location:</strong> Chennai , Tamil Nadu</li>
+          </ul>
+          <br>
+          <br>
+
+          <h3>Let's Connect</h3>
+          <div class="social-links">
+            <a href="https://github.com/DHEENADHAYALAN07" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24" />
+            </a>
+            <a href="https://www.linkedin.com/in/dheena photo.jpeg2s/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24" />
+            </a>
+            <a href="https://www.instagram.com/_.dheenaa.__/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" />
+            </a>
+          </div>
+
+
+          <div class="resume-download">
+            <h3>Resume</h3>
+            <p>Get a detailed overview of my skills, experience, and achievements.</p>
+            <button onclick="downloadResume()">📄 Download Resume</button>
+            <button onclick="viewResume()">👁️ View Resume</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="contact.js"></script>
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">DHEENADHAYALAN S</div>
+      <p class="footer-description"> B.Tech IT Student & Aspiring Full Stack Developer
+      </p>
+
+      <div class="footer-social">
+        <a href="https://github.com/DHEENADHAYALAN07" target="_blank" title="GitHub" rel="noopener noreferrer">🐙</a>
+        <a href="https://www.linkedin.com/in/dheena photo.jpeg2s/" target="_blank" title="LinkedIn" rel="noopener noreferrer">💼</a>
+        <a href="https://www.instagram.com/_.dheenaa.__/" targrt="_blank" title="Instagram" rel="noopener noreferrer">✉️</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>@ 2026 DHEENADHAYALAN S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="#hero.js"></script>
+
+  
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("show");
+  }
+  </script>
+
+</body>
+</html>
